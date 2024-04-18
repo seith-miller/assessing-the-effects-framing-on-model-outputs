@@ -1,0 +1,80 @@
+History_1_Unframed:
+  prompt: "What was the date of D-day?"
+
+History_1_Framed:
+  prompt:
+    You are a History Professor. You are being asked the question "What was the date of D-day."
+    - Your response should include a date.
+    - Your response should cite your sources.
+
+History_2_Unframed:
+  prompt: "What new nations were founded in the 1960s"
+
+History_2_Framed:
+  prompt:
+    You are a History Professor. You are being asked the question "What new nations were founded in the 1960s?"
+    - Your response should include a list of nations.
+    - Your response should cite your sources.
+
+History_3_Unframed:
+  prompt: "List 5 confederate generals."
+
+History_3_Framed:
+  prompt:
+    You are a History Professor. You are being asked to "List 5 confederate generals."
+    - Your response should include a list of generals.
+    - Your response should cite your sources.
+
+Math_1_Unframed:
+  prompt: "List all the prime numbers between 1 and 1000."
+
+Math_1_Framed:
+  prompt:
+    You are a Math Professor, you are being asked the question "List all the prime numbers between 1 and 1000."
+    - Your response should include all prime numbers between 1 and 1000.
+    - Your response to include a mathematical proof.
+
+Math_2_Unframed:
+  prompt: "What is the sum of the squares of the first ten natural numbers?"
+
+Math_2_Framed:
+  prompt:
+    You are a Math Professor, you are being asked the question "What is the sum of the squares of the first ten natural numbers?"
+    - Your response should include the sum.
+    - Your response to include a mathematical proof.
+
+Math_3_Unframed:
+  prompt: "Your target is at the top of a tower which is 324 meters tall. You are standing at ground level, 54 meters from the base of the tower, aiming a laser gun at your target. At what angle, in degrees, should you shoot your laser gun to hit the target?"
+
+Math_3_Framed:
+  prompt:
+    You are a Math Professor, you are being asked the question "Your target is at the top of a tower which is 324 meters tall. You are standing at ground level, 54 meters from the base of the tower, aiming a laser gun at your target. At what angle, in degrees, should you shoot your laser gun to hit the target?"
+    - Your response should the angle.
+    - Your response to include a mathematical proof.
+
+Logic_1_Unframed:
+  prompt: "At a restaurant, cake and ice cream costs $1.10 in total. The cake costs $1 more than the ice cream. How much does the ice cream cost?"
+
+Logic_1_Framed:
+  prompt:
+    You are a Logic Professor. You are being asked the question "At a restaurant, cake and ice cream costs $1.10 in total. The cake costs $1 more than the ice cream. How much does the ice cream cost?"
+    - Your response should include the cost of the ice cream.
+    - Your response should include a logical proof demonstrating your reasoning.
+
+Logic_2_Unframed:
+  prompt: "Determine a consistent solution, indicating True or False for each of these propositions, Proposition 1, Proposition 3 is false. Proposition 2, Proposition 1 is true. Proposition 3, The answers to Propositions 1 & 2 are the same."
+
+Logic_2_Framed:
+  prompt:
+    You are a Logic Professor. You are being asked the question "Determine a consistent solution, indicating True or False for each of these propositions, Proposition 1, Proposition 3 is false. Proposition 2, Proposition 1 is true. Proposition 3, The answers to Propositions 1 & 2 are the same."
+    - Your response should include true or false values for each of the three propositions.
+    - Your response should include a logical explanation of your reasoning.
+
+Logic_3_Unframed:
+  prompt: "Assume that published books are classified as novels, short stories, or storybooks according to the following classification, A novel has at least 400 pages. A short story has at most 200 pages. A storybook has at most 600 pages. What can we say about a book that has 500 pages?"
+
+Logic_3_Framed:
+  prompt:
+    You are a Logic Professor. You are being asked the question "Assume that published books are classified as novels, short stories, or storybooks according to the following classification, A novel has at least 400 pages. A short story has at most 200 pages. A storybook has at most 600 pages. What can we say about a book that has 500 pages?"
+    - Your response should include all the classifications relevant to a book of that length.
+    - Your response should include reasoning for why each classification does or does not apply to a book of that length.
