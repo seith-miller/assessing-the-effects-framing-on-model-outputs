@@ -1,2 +1,2 @@
-openai
-pyyaml
+openai==0.28
+pyyaml 

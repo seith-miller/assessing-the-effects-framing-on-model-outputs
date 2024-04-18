@@ -45,3 +45,6 @@ Run the unit tests to ensure that everything is set up correctly:
 
 bash
 python3 -m unittest test_prompt_processor.py
+
+find . -type f ! -path './.git/*' ! -path './venv/*' ! -path './__pycache__/*' -exec echo {} \; -exec cat {} \;
+

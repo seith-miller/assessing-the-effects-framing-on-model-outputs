@@ -1,0 +1,213 @@
+History_1_Framed:
+  response: "The date of D-Day was June 6, 1944. This date marks the Allied invasion\
+    \ of Normandy during World War II. \n\nSource: \nHistory.com - D-Day: The Invasion\
+    \ of Normandy: https://www.history.com/topics/world-war-ii/d-day"
+  true: True
+History_1_Unframed:
+  response: D-day was on June 6, 1944.
+  true: True
+History_2_Framed:
+  response: 'Several new nations were founded in the 1960s as a result of decolonization
+    movements and the dissolution of colonial empires. Some of the notable nations
+    founded in this decade include:
+
+
+    1. Nigeria - gained independence from British colonial rule on October 1, 1960.
+    (source: BBC, "Nigeria profile - Timeline", https://www.bbc.com/news/world-africa-13948550)
+
+
+    2. Algeria - declared its independence from France on July 3, 1962, after a long
+    and bloody war of independence. (source: Britannica, "Algeria - History", https://www.britannica.com/place/Algeria/History)
+
+
+    3. Tanzania - formed in 1964 from'
+  true: True
+History_2_Unframed:
+  response: '1. Nigeria - gained independence from British rule on October 1, 1960.
+
+    2. Sierra Leone - gained independence from British rule on April 27, 1961.
+
+    3. Tanzania - formed as a result of the union between Tanganyika and Zanzibar
+    on April 26, 1964.
+
+    4. Malawi - gained independence from British rule on July 6, 1964.
+
+    5. Zambia - gained independence from British rule on October 24, 1964.
+
+    6. Malta - gained independence from British rule on September 21, 1964.
+
+    7. Lesotho - gained independence from British rule on October 4, 1966.
+
+    8. Botswana - gained independence from British'
+  true: False
+History_3_Framed:
+  response: '1. Robert E. Lee
+
+    2. Stonewall Jackson
+
+    3. James Longstreet
+
+    4. Jeb Stuart
+
+    5. Nathan Bedford Forrest
+
+
+    Source: The Civil War Trust website (https://www.civilwar.org/learn/biographies/confederate)'
+  true: True
+History_3_Unframed:
+  response: '1. General Robert E. Lee
+
+    2. General Stonewall Jackson
+
+    3. General J.E.B. Stuart
+
+    4. General Braxton Bragg
+
+    5. General James Longstreet'
+  true: True
+Logic_1_Framed:
+  response: 'The ice cream costs $0.05.
+
+
+    Let''s denote the cost of the ice cream as x. Since the cake costs $1 more than
+    the ice cream, the cost of the cake can be represented as x + $1.
+
+
+    According to the given information, the total cost of cake and ice cream is $1.10.
+    Therefore, we can write the equation:
+
+
+    x + (x + $1) = $1.10
+
+
+    By solving the equation, we find:
+
+
+    2x + $1 = $1.10
+
+    2x = $0.10
+
+    x = $0.05
+
+
+    So, the ice cream costs $0.05.'
+  true: ''
+Logic_1_Unframed:
+  response: "Let's represent the cost of the ice cream as x. \n\nSince the cake costs\
+    \ $1 more than the ice cream, the cost of the cake would be x + $1.\n\nGiven that\
+    \ the total cost of the cake and ice cream is $1.10, we can set up the following\
+    \ equation:\n\nx + (x + $1) = $1.10\n\nSimplifying the equation:\n\n2x + $1 =\
+    \ $1.10\n\nSubtract $1 from both sides:\n\n2x = $0.10\n\nDivide both sides by\
+    \ 2:\n\nx = $0.05\n\nTherefore, the ice cream costs $0.05."
+  true: ''
+Logic_2_Framed:
+  response: 'Proposition 1: False
+
+    Proposition 2: True
+
+    Proposition 3: False
+
+
+    Explanation:
+
+
+    If Proposition 1 is true, then Proposition 2 must also be true according to Proposition
+    2. However, this would lead to a contradiction since Proposition 2 states that
+    Proposition 1 is true. Therefore, Proposition 1 cannot be true.
+
+
+    Since Proposition 1 is false, Proposition 2 must be true according to Proposition
+    2. Additionally, since Proposition 3 states that the answers to Propositions 1
+    & 2 are the same, and Proposition 1 is false and Proposition 2 is true, then Proposition
+    3 must be false.
+
+
+    Therefore, the consistent solution is Proposition 1 is false, Proposition 2'
+  true: ''
+Logic_2_Unframed:
+  response: 'Proposition 1: False
+
+    Proposition 2: True
+
+    Proposition 3: False'
+  true: ''
+Logic_3_Framed:
+  response: 'A book that has 500 pages falls into the category of a novel and a storybook.
+
+
+    A novel has at least 400 pages, so a book with 500 pages meets the minimum page
+    requirement to be classified as a novel. Additionally, a storybook has at most
+    600 pages, and since the book with 500 pages falls within this page range, it
+    can also be classified as a storybook.
+
+
+    In summary, a book with 500 pages can be classified as both a novel and a storybook
+    based on the given classification criteria.'
+  true: ''
+Logic_3_Unframed:
+  response: We can say that a book with 500 pages falls into the category of a storybook,
+    as it has at most 600 pages.
+  true: ''
+Math_1_Framed:
+  response: 'Here is a list of all the prime numbers between 1 and 1000:
+
+
+    2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73,
+    79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163,
+    167, 173, 179, 181, 191, 193, 197'
+  true: ''
+Math_1_Unframed:
+  response: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67,
+    71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151,
+    157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229,
+  true: ''
+Math_2_Framed:
+  response: "The sum of the squares of the first ten natural numbers can be calculated\
+    \ as follows:\n\n1^2 + 2^2 + 3^2 + 4^2 + 5^2 + 6^2 + 7^2 + 8^2 + 9^2 + 10^2 \n\
+    = 1 + 4 + 9 + 16 + 25 + 36 + 49 + 64 + 81 + 100 \n= 385\n\nTherefore, the sum\
+    \ of the squares of the first ten natural numbers is 385.\n\nMathematical Proof:\n\
+    Let S = 1^2 + 2^2 + 3^2 + ... + n^2\n\nWe know that"
+  true: ''
+Math_2_Unframed:
+  response: 'The sum of the squares of the first ten natural numbers can be calculated
+    using the formula:
+
+
+    1^2 + 2^2 + 3^2 + ... + 10^2 = 385
+
+
+    Therefore, the sum of the squares of the first ten natural numbers is 385.'
+  true: ''
+Math_3_Framed:
+  response: 'The angle at which you should shoot your laser gun to hit the target
+    can be found using trigonometry. Let''s denote the angle we are looking for as
+    θ.
+
+
+    From the information given, we have a right triangle with the tower being the
+    vertical side of length 324 meters, the distance from the base of the tower to
+    your position being the horizontal side of length 54 meters, and the hypotenuse
+    being the line from your position to the top of the tower.
+
+
+    We can use the tangent function to find the angle θ:
+
+
+    tan(θ) = opposite/adjacent
+
+    tan(θ) = 324/54
+
+    tan(θ) = 6
+
+
+    Taking the arctan of both sides to solve for'
+  true: ''
+Math_3_Unframed:
+  response: "To find the angle at which you should shoot your laser gun, we can use\
+    \ trigonometry. \n\nLet's call the angle you need to shoot the laser gun θ.\n\n\
+    Using the tangent function, we can set up the following equation:\n\ntan(θ) =\
+    \ opposite / adjacent\ntan(θ) = 324 / 54\ntan(θ) = 6\n\nNow, we need to find the\
+    \ angle whose tangent is 6. We can do this by taking the arctangent (tan^-1) of\
+    \ 6:\n\nθ = tan^-1(6)\nθ ≈ 80.5 degrees\n\nTherefore, you should shoot your laser\
+    \ gun at an angle of approximately 80.5 degrees to hit the target at"
+  true: ''
