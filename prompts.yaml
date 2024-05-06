@@ -1,80 +1,103 @@
 History_1_Unframed:
   prompt: "What was the date of D-day?"
+  correct_response:
+    Tuesday, 6 June 1944
 
 History_1_Framed:
   prompt:
     You are a History Professor. You are being asked the question "What was the date of D-day."
     - Your response should include a date.
     - Your response should cite your sources.
+  correct_response:
+    Tuesday, 6 June 1944
 
 History_2_Unframed:
-  prompt: "What new nations were founded in the 1960s"
+  prompt: "What country gained independence from the United Kingdom in 1776?"
+  correct_response: "The United States of America gained independence from the United Kingdom in 1776."
 
 History_2_Framed:
   prompt:
-    You are a History Professor. You are being asked the question "What new nations were founded in the 1960s?"
-    - Your response should include a list of nations.
-    - Your response should cite your sources.
+    You are a History Professor. You are being asked the question "What country gained independence from the United Kingdom in 1776?"
+    - Your response should include the name of the country.
+  correct_response: "The United States of America gained independence from the United Kingdom in 1776."
 
-History_3_Unframed:
-  prompt: "List 5 confederate generals."
+Revised History_3_Unframed:
+  prompt: "Who was the commanding general of the Confederate States Army during the American Civil War?"
+  correct_response: "General Robert E. Lee was the commanding general of the Confederate States Army during the American Civil War."
 
-History_3_Framed:
+Revised History_3_Framed:
   prompt:
-    You are a History Professor. You are being asked to "List 5 confederate generals."
-    - Your response should include a list of generals.
+    You are a History Professor. You are being asked to "Who was the commanding general of the Confederate States Army during the American Civil War?"
+    - Your response should include the name of the general.
     - Your response should cite your sources.
+  correct_response: "General Robert E. Lee was the commanding general of the Confederate States Army during the American Civil War."
 
 Math_1_Unframed:
   prompt: "List all the prime numbers between 1 and 1000."
+  correct_response: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 523, 541, 547, 557, 563, 569, 571, 577, 587, 593, 599, 601, 607, 613, 617, 619, 631, 641, 643, 647, 653, 659, 661, 673, 677, 683, 691, 701, 709, 719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797, 809, 811, 821, 823, 827, 829, 839, 853, 857, 859, 863, 877, 881, 883, 887, 907, 911, 919, 929, 937, 941, 947, 953, 967, 971, 977, 983, 991, 997.
 
 Math_1_Framed:
   prompt:
     You are a Math Professor, you are being asked the question "List all the prime numbers between 1 and 1000."
     - Your response should include all prime numbers between 1 and 1000.
     - Your response to include a mathematical proof.
+  correct_response: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389, 397, 401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 523, 541, 547, 557, 563, 569, 571, 577, 587, 593, 599, 601, 607, 613, 617, 619, 631, 641, 643, 647, 653, 659, 661, 673, 677, 683, 691, 701, 709, 719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797, 809, 811, 821, 823, 827, 829, 839, 853, 857, 859, 863, 877, 881, 883, 887, 907, 911, 919, 929, 937, 941, 947, 953, 967, 971, 977, 983, 991, 997.
 
 Math_2_Unframed:
   prompt: "What is the sum of the squares of the first ten natural numbers?"
+  correct_response: "The sum is 385."
 
 Math_2_Framed:
   prompt:
     You are a Math Professor, you are being asked the question "What is the sum of the squares of the first ten natural numbers?"
     - Your response should include the sum.
     - Your response to include a mathematical proof.
+  correct_response: "The sum is 385."
 
 Math_3_Unframed:
   prompt: "Your target is at the top of a tower which is 324 meters tall. You are standing at ground level, 54 meters from the base of the tower, aiming a laser gun at your target. At what angle, in degrees, should you shoot your laser gun to hit the target?"
-
+  correct_response: "The angle is approximately 80.54 degrees."
 Math_3_Framed:
   prompt:
     You are a Math Professor, you are being asked the question "Your target is at the top of a tower which is 324 meters tall. You are standing at ground level, 54 meters from the base of the tower, aiming a laser gun at your target. At what angle, in degrees, should you shoot your laser gun to hit the target?"
     - Your response should the angle.
     - Your response to include a mathematical proof.
+  correct_response: "The angle is approximately 80.54 degrees."
 
 Logic_1_Unframed:
   prompt: "At a restaurant, cake and ice cream costs $1.10 in total. The cake costs $1 more than the ice cream. How much does the ice cream cost?"
-
+  correct_response: "The ice cream costs $0.05."
 Logic_1_Framed:
   prompt:
     You are a Logic Professor. You are being asked the question "At a restaurant, cake and ice cream costs $1.10 in total. The cake costs $1 more than the ice cream. How much does the ice cream cost?"
     - Your response should include the cost of the ice cream.
     - Your response should include a logical proof demonstrating your reasoning.
+  correct_response: "The ice cream costs $0.05."
 
 Logic_2_Unframed:
   prompt: "Determine a consistent solution, indicating True or False for each of these propositions, Proposition 1, Proposition 3 is false. Proposition 2, Proposition 1 is true. Proposition 3, The answers to Propositions 1 & 2 are the same."
-
+  correct_response:
+    Proposition 1, True
+    Proposition 2, True
+    Proposition 3, True
 Logic_2_Framed:
   prompt:
     You are a Logic Professor. You are being asked the question "Determine a consistent solution, indicating True or False for each of these propositions, Proposition 1, Proposition 3 is false. Proposition 2, Proposition 1 is true. Proposition 3, The answers to Propositions 1 & 2 are the same."
     - Your response should include true or false values for each of the three propositions.
     - Your response should include a logical explanation of your reasoning.
+  correct_response:
+    Proposition 1, True
+    Proposition 2, True
+    Proposition 3, True
 
 Logic_3_Unframed:
   prompt: "Assume that published books are classified as novels, short stories, or storybooks according to the following classification, A novel has at least 400 pages. A short story has at most 200 pages. A storybook has at most 600 pages. What can we say about a book that has 500 pages?"
+  correct_response: A book with 500 pages can be classified as a novel because it has at least 400 pages but no more than 600 pages, making it not a short story.
 
 Logic_3_Framed:
   prompt:
     You are a Logic Professor. You are being asked the question "Assume that published books are classified as novels, short stories, or storybooks according to the following classification, A novel has at least 400 pages. A short story has at most 200 pages. A storybook has at most 600 pages. What can we say about a book that has 500 pages?"
     - Your response should include all the classifications relevant to a book of that length.
     - Your response should include reasoning for why each classification does or does not apply to a book of that length.
+  correct_response: A book with 500 pages can be classified as a novel because it has at least 400 pages but no more than 600 pages, making it not a short story.
+

@@ -13,15 +13,6 @@ def read_yaml_file(file_path):
     with open(file_path, 'r') as file:
         return yaml.safe_load(file)
 
-def write_responses_to_yaml(responses, output_file):
-    """Writes the responses to a YAML file, adding a 'true' field to each."""
-    # Enhance each response in the dictionary with a 'true' field
-    for key in responses:
-        responses[key]['true'] = ""  # Add a blank 'true' field to each response
-
-    with open(output_file, 'w') as file:
-        yaml.dump(responses, file, allow_unicode=True, default_flow_style=False)
-
 def submit_prompt_to_openai(prompt, api_key):
     """Submits a prompt to the OpenAI API using the ChatCompletion endpoint and returns the response."""
     try:
@@ -40,18 +31,27 @@ def submit_prompt_to_openai(prompt, api_key):
         # Catching any other exceptions that may occur and returning a string that includes their message
         return f"Unhandled exception: {str(e)}"
 
+def submit_verification_to_openai(response, correct_response, api_key):
+    """Submits a verification prompt to OpenAI to determine correctness."""
+    verification_prompt = f"Does the following response: '{response}' correctly answer the question with '{correct_response}'? Respond with 'true' or 'false'."
+    return submit_prompt_to_openai(verification_prompt, api_key)
 
 def process_prompts(file_path, api_key):
-    """Processes each prompt in the YAML file, submits them to OpenAI, and saves the responses."""
+    """Processes each prompt in the YAML file, submits them to OpenAI, evaluates, and saves the responses."""
     data = read_yaml_file(file_path)
     responses = {}
-
     for test_name, details in data.items():
-        prompt = details.get('prompt') or details.get('question')
-        response = submit_prompt_to_openai(prompt, api_key)
-        responses[test_name] = {'response': response}
-
+        prompt = details['prompt']
+        correct_response = details['correct_response']
+        generated_response = submit_prompt_to_openai(prompt, api_key)
+        verification_response = submit_verification_to_openai(generated_response, correct_response, api_key)
+        responses[test_name] = {'response': generated_response, 'response_correct': verification_response}
     return responses
+
+def write_responses_to_yaml(responses, output_file):
+    """Writes the responses to a YAML file."""
+    with open(output_file, 'w') as file:
+        yaml.dump(responses, file, allow_unicode=True, default_flow_style=False)
 
 def main():
     api_key = load_config()
