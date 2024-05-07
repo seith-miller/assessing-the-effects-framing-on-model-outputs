@@ -51,11 +51,15 @@ This script reads the prompts from prompts.yaml, interacts with the OpenAI API, 
 ## Testing
 Run the unit tests to ensure that everything is set up correctly:
 ```bash
-python3 -m unittest test_prompt_processor.py
+python -m unittest discover tests
 ```
 
 ### Helpful Tip
 If you want to share your work with a larger language model, this is a useful command ;-)
 ```bash
-find . -type f ! -path './.git/*' ! -path './venv/*' ! -path './__pycache__/*' -exec echo {} \; -exec cat {} \;
+find . -type f ! -name '*.png' ! -path './.git/*' ! -path './venv/*' ! -path './__pycache__/*' -exec echo {} \; -exec cat {} \;
 ```
+or 
+```bash
+for file in README.md ai_interface.py prompt_processor.py utilities.py visualization.py; do echo "File: $file"; cat "$file"; echo; done
+'''
