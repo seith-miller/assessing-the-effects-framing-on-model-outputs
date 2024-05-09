@@ -13,7 +13,8 @@ def load_config():
     configparser.Error: If the config file has issues or the section is missing.
     """
     config = configparser.ConfigParser()
-    config.read('config.ini')
+    config.read('config/config.ini')
+
     try:
         return config['openai']['api_key']
     except KeyError as e:

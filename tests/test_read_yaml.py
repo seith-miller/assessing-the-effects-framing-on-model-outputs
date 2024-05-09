@@ -1,9 +1,13 @@
-# test_read_yaml.py
+import unittest
 import yaml
 
-def test_read_yaml():
-    with open('prompts.yaml', 'r') as file:
-        data = yaml.safe_load(file)
-        print(data)
+class TestYAML(unittest.TestCase):
+    def test_load_prompts(self):
+        with open('data/input/prompts.yaml', 'r') as file:
+            data = yaml.safe_load(file)
+            for name, details in data.items():
+                prompt = details['prompt']
+                print(prompt)
 
-test_read_yaml()
+if __name__ == '__main__':
+    unittest.main()

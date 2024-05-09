@@ -21,7 +21,7 @@ def plot_data(true_counts, false_counts):
     ax.set_xticklabels(categories)
     ax.legend()
 
-    plt.savefig('bar_chart.png')
+    plt.savefig('data/output/bar_chart.png')
 
 def process_data(data):
     """Process data to count true and false responses for framed and unframed prompts."""

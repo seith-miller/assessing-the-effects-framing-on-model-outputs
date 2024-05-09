@@ -1,1 +1,206 @@
-{}
+History_1_Framed:
+  response: D-Day occurred on June 6, 1944. This date marks the day when the Allied
+    forces landed on the beaches of Normandy, France during World War II. This information
+    can be verified through various historical sources like official military records,
+    academic texts, and documentaries on World War II.
+  response_correct: 'true'
+History_1_Unframed:
+  response: D-Day, the Allied invasion of Normandy during World War II, took place
+    on June 6, 1944.
+  response_correct: 'True'
+History_2_Framed:
+  response: The country that gained independence from the United Kingdom in 1776 is
+    the United States of America.
+  response_correct: 'True'
+History_2_Unframed:
+  response: The United States gained independence from the United Kingdom in 1776.
+  response_correct: 'false'
+History_3_Framed:
+  response: "The commanding general of the Confederate States Army during the American\
+    \ Civil War was General Robert E. Lee. Lee served as the principal military leader\
+    \ of the Confederate forces from 1862 until the end of the war in 1865. \n\nSources:\n\
+    - Britannica. (n.d.). Robert E. Lee. In Encyclopedia Britannica. Retrieved from\
+    \ https://www.britannica.com/biography/Robert-E-Lee\n- History.com Editors. (2018,\
+    \ November 28). Robert E. Lee. In History. Retrieved from https://www.history.com/topics/american-civil-war/robert-e-lee"
+  response_correct: 'True'
+History_3_Unframed:
+  response: The commanding general of the Confederate States Army during the American
+    Civil War was General Robert E. Lee.
+  response_correct: 'True'
+Logic_1_Framed:
+  response: 'The ice cream costs $0.05.
+
+
+    Let''s denote the cost of the ice cream as x. Since the cake costs $1 more than
+    the ice cream, the cost of the cake can be represented as x + $1.
+
+
+    According to the given information, the total cost of cake and ice cream is $1.10.
+    Therefore, we can form the following equation:
+
+    x + (x + $1) = $1.10
+
+    2x + $1 = $1.10
+
+    2x = $0.10
+
+    x = $0.05
+
+
+    So, the ice cream costs $0.05.'
+  response_correct: 'True'
+Logic_1_Unframed:
+  response: 'Let''s say the cost of the ice cream is x.
+
+
+    Then, the cost of the cake is x + $1.
+
+
+    Together, the total cost is x + x + $1 = $1.10.
+
+
+    This simplifies to 2x + $1 = $1.10.
+
+
+    Subtracting $1 from both sides, we get 2x = $0.10.
+
+
+    Dividing by 2, we find that x = $0.05.
+
+
+    Therefore, the ice cream costs $0.05.'
+  response_correct: 'True'
+Logic_2_Framed:
+  response: 'Proposition 1: False
+
+    Proposition 2: True
+
+    Proposition 3: False
+
+
+    Explanation:
+
+    If Proposition 1 were true, then Proposition 2 would also have to be true. However,
+    if Proposition 2 were true, then Proposition 1 would have to be false. This creates
+    a contradiction, so Proposition 1 cannot be true.
+
+    If Proposition 2 is true, and Proposition 1 is false, then Proposition 3 must
+    also be false. This is because Proposition 3 states that the answers to Propositions
+    1 & 2 are the same, but since Proposition 1 is false and Proposition 2 is true,
+    the answers are not the same.'
+  response_correct: 'false'
+Logic_2_Unframed:
+  response: 'Proposition 1: True
+
+    Proposition 2: True
+
+    Proposition 3: False'
+  response_correct: 'false'
+Logic_3_Framed:
+  response: "A book with 500 pages falls under the classification of a novel and a\
+    \ storybook. \n\n1. Novel: A novel is classified as a book with at least 400 pages.\
+    \ Since a book with 500 pages meets this criterion, it can be classified as a\
+    \ novel.\n\n2. Storybook: A storybook is classified as a book with at most 600\
+    \ pages. Since a book with 500 pages falls within this range, it can also be classified\
+    \ as a storybook.\n\nTherefore, a book with 500 pages can be classified as both\
+    \ a novel and a storybook based on the given classifications."
+  response_correct: 'true'
+Logic_3_Unframed:
+  response: We can say that a book with 500 pages falls into the category of a storybook,
+    since it has at most 600 pages.
+  response_correct: 'False'
+Math_1_Framed:
+  response: 'Sure, here is a list of all prime numbers between 1 and 1000:
+
+
+    2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73,
+    79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163,
+    167, 173, 179, 181, 191, 193,'
+  response_correct: 'False'
+Math_1_Unframed:
+  response: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67,
+    71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151,
+    157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229,
+  response_correct: 'False'
+Math_2_Framed:
+  response: 'The sum of the squares of the first ten natural numbers can be calculated
+    using the formula:
+
+
+    Sum = n(n+1)(2n+1)/6
+
+
+    Where n is the number of natural numbers.
+
+
+    For the first ten natural numbers, n = 10. Plugging this into the formula:
+
+
+    Sum = 10(10+1)(2*10+1)/6
+
+    Sum = 10*11*21/6
+
+    Sum = 385
+
+
+    Therefore, the sum of the squares of the first ten natural numbers is 385.'
+  response_correct: 'true'
+Math_2_Unframed:
+  response: 'The sum of the squares of the first ten natural numbers can be calculated
+    using the formula:
+
+
+    n(n+1)(2n+1)/6
+
+
+    Where n is the number of natural numbers we want to sum the squares of. In this
+    case, n = 10.
+
+
+    Plugging in n = 10 into the formula:
+
+
+    10(10+1)(2*10+1)/6
+
+    = 10(11)(21)/6
+
+    = 10*231/6
+
+    = 10*77
+
+    = 770
+
+
+    Therefore, the sum of the squares of the first ten natural numbers is 770.'
+  response_correct: 'false'
+Math_3_Framed:
+  response: 'To find the angle at which you should aim your laser gun to hit the target,
+    we can use trigonometry. Let''s define the angle we are looking for as \( \theta
+    \).
+
+
+    From the information given, we can see that we have a right triangle formed by
+    the tower, the distance from the base of the tower to your position, and the line
+    of sight from your position to the top of the tower.
+
+
+    The opposite side of the triangle is the height of the tower, which is 324 meters.
+    The adjacent side of the triangle is the distance from the base of the tower to
+    your position, which is 54 meters.
+
+
+    Now, we can use the tangent function to find the angle \( \theta \):
+
+
+    \( \tan(\'
+  response_correct: 'true'
+Math_3_Unframed:
+  response: "To find the angle at which you should shoot your laser gun, you can use\
+    \ trigonometry. \n\nLet the angle you need to shoot at be θ. The opposite side\
+    \ of the triangle formed by the tower and the ground is 324 meters (height of\
+    \ the tower) and the adjacent side is 54 meters (distance from the base of the\
+    \ tower to your position). \n\nUsing the tangent function:\ntan(θ) = opposite/adjacent\n\
+    tan(θ) = 324/54\ntan(θ) = 6 \n\nTaking the inverse tangent of both sides:\nθ =\
+    \ tan^(-1)(6)\nθ ≈ 80.54 degrees \n\nTherefore, you should shoot your laser gun\
+    \ at an angle of approximately"
+  response_correct: 'True'

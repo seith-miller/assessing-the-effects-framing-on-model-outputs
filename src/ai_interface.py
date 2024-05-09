@@ -1,3 +1,4 @@
+import itertools
 import openai
 from utilities import read_yaml_file
 
