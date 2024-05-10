@@ -16,7 +16,9 @@ def load_config():
     config.read('config/config.ini')
 
     try:
-        return config['openai']['api_key']
+        api_key = config['openai']['api_key']
+        models = config['openai']['models'].split(', ')
+        return api_key, models
     except KeyError as e:
         raise KeyError(f"Missing key in configuration: {e}")
     except configparser.Error as e:

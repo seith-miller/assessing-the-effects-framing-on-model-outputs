@@ -1,206 +1,921 @@
-History_1_Framed:
-  response: D-Day occurred on June 6, 1944. This date marks the day when the Allied
-    forces landed on the beaches of Normandy, France during World War II. This information
-    can be verified through various historical sources like official military records,
-    academic texts, and documentaries on World War II.
-  response_correct: 'true'
-History_1_Unframed:
-  response: D-Day, the Allied invasion of Normandy during World War II, took place
-    on June 6, 1944.
-  response_correct: 'True'
-History_2_Framed:
-  response: The country that gained independence from the United Kingdom in 1776 is
-    the United States of America.
-  response_correct: 'True'
-History_2_Unframed:
-  response: The United States gained independence from the United Kingdom in 1776.
-  response_correct: 'false'
-History_3_Framed:
-  response: "The commanding general of the Confederate States Army during the American\
-    \ Civil War was General Robert E. Lee. Lee served as the principal military leader\
-    \ of the Confederate forces from 1862 until the end of the war in 1865. \n\nSources:\n\
-    - Britannica. (n.d.). Robert E. Lee. In Encyclopedia Britannica. Retrieved from\
-    \ https://www.britannica.com/biography/Robert-E-Lee\n- History.com Editors. (2018,\
-    \ November 28). Robert E. Lee. In History. Retrieved from https://www.history.com/topics/american-civil-war/robert-e-lee"
-  response_correct: 'True'
-History_3_Unframed:
-  response: The commanding general of the Confederate States Army during the American
-    Civil War was General Robert E. Lee.
-  response_correct: 'True'
-Logic_1_Framed:
-  response: 'The ice cream costs $0.05.
+gpt-3.5-turbo:
+  History_1_Framed:
+    model: gpt-3.5-turbo
+    response: "The date of D-day was June 6, 1944. This was the day that Allied forces\
+      \ landed on the beaches of Normandy, France, marking the beginning of the end\
+      \ of World War II in Europe. \n\nSource: The National WWII Museum, https://www.nationalww2museum.org/war/topics/operation-overlord-1944#:~:text=Operation%20Overlord%20began%20on%20June,The%20D%2Dday%20invasion%20led."
+    response_correct: 'true'
+  History_1_Unframed:
+    model: gpt-3.5-turbo
+    response: D-day, also known as the beginning of the Normandy landings during World
+      War II, occurred on June 6, 1944.
+    response_correct: 'True'
+  History_2_Framed:
+    model: gpt-3.5-turbo
+    response: The country that gained independence from the United Kingdom in 1776
+      was the United States of America.
+    response_correct: 'True'
+  History_2_Unframed:
+    model: gpt-3.5-turbo
+    response: The United States of America gained independence from the United Kingdom
+      in 1776.
+    response_correct: 'True'
+  History_3_Framed:
+    model: gpt-3.5-turbo
+    response: 'The commanding general of the Confederate States Army during the American
+      Civil War was General Robert E. Lee.
 
 
-    Let''s denote the cost of the ice cream as x. Since the cake costs $1 more than
-    the ice cream, the cost of the cake can be represented as x + $1.
+      Source: https://www.history.com/topics/american-civil-war/robert-e-lee'
+    response_correct: 'True'
+  History_3_Unframed:
+    model: gpt-3.5-turbo
+    response: Robert E. Lee was the commanding general of the Confederate States Army
+      during the American Civil War.
+    response_correct: 'True'
+  Logic_1_Framed:
+    model: gpt-3.5-turbo
+    response: 'The ice cream costs $0.05.
 
 
-    According to the given information, the total cost of cake and ice cream is $1.10.
-    Therefore, we can form the following equation:
+      Let''s denote the cost of the ice cream as x. Since the cake costs $1 more than
+      the ice cream, the cost of the cake can be represented as x + $1.
 
-    x + (x + $1) = $1.10
 
-    2x + $1 = $1.10
+      Given that the total cost of the cake and ice cream is $1.10, we can set up
+      the equation:
 
-    2x = $0.10
+      x + (x + $1) = $1.10
 
-    x = $0.05
+      2x + $1 = $1.10
 
+      2x = $0.10
 
-    So, the ice cream costs $0.05.'
-  response_correct: 'True'
-Logic_1_Unframed:
-  response: 'Let''s say the cost of the ice cream is x.
+      x = $0.05
 
 
-    Then, the cost of the cake is x + $1.
+      Therefore, the cost of the ice cream is $0.05.'
+    response_correct: 'true'
+  Logic_1_Unframed:
+    model: gpt-3.5-turbo
+    response: 'Let''s say the cost of the ice cream is x.
 
 
-    Together, the total cost is x + x + $1 = $1.10.
+      Given that the cake costs $1 more than the ice cream, we can say that the cost
+      of the cake is x + $1.
 
 
-    This simplifies to 2x + $1 = $1.10.
+      As per the information provided, the total cost of cake and ice cream is $1.10.
 
 
-    Subtracting $1 from both sides, we get 2x = $0.10.
+      So, the equation becomes:
 
 
-    Dividing by 2, we find that x = $0.05.
+      x + (x + $1) = $1.10
 
+      2x + $1 = $1.10
 
-    Therefore, the ice cream costs $0.05.'
-  response_correct: 'True'
-Logic_2_Framed:
-  response: 'Proposition 1: False
+      2x = $1.10 - $1
 
-    Proposition 2: True
+      2x = $0.10
 
-    Proposition 3: False
+      x = $0.10 / 2
 
+      x = $0.05
 
-    Explanation:
 
-    If Proposition 1 were true, then Proposition 2 would also have to be true. However,
-    if Proposition 2 were true, then Proposition 1 would have to be false. This creates
-    a contradiction, so Proposition 1 cannot be true.
+      Therefore, the ice cream costs $0.05.'
+    response_correct: 'True'
+  Logic_2_Framed:
+    model: gpt-3.5-turbo
+    response: '- Proposition 1: False
 
-    If Proposition 2 is true, and Proposition 1 is false, then Proposition 3 must
-    also be false. This is because Proposition 3 states that the answers to Propositions
-    1 & 2 are the same, but since Proposition 1 is false and Proposition 2 is true,
-    the answers are not the same.'
-  response_correct: 'false'
-Logic_2_Unframed:
-  response: 'Proposition 1: True
+      - Proposition 2: True
 
-    Proposition 2: True
+      - Proposition 3: True
 
-    Proposition 3: False'
-  response_correct: 'false'
-Logic_3_Framed:
-  response: "A book with 500 pages falls under the classification of a novel and a\
-    \ storybook. \n\n1. Novel: A novel is classified as a book with at least 400 pages.\
-    \ Since a book with 500 pages meets this criterion, it can be classified as a\
-    \ novel.\n\n2. Storybook: A storybook is classified as a book with at most 600\
-    \ pages. Since a book with 500 pages falls within this range, it can also be classified\
-    \ as a storybook.\n\nTherefore, a book with 500 pages can be classified as both\
-    \ a novel and a storybook based on the given classifications."
-  response_correct: 'true'
-Logic_3_Unframed:
-  response: We can say that a book with 500 pages falls into the category of a storybook,
-    since it has at most 600 pages.
-  response_correct: 'False'
-Math_1_Framed:
-  response: 'Sure, here is a list of all prime numbers between 1 and 1000:
 
+      Explanation:
 
-    2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73,
-    79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163,
-    167, 173, 179, 181, 191, 193,'
-  response_correct: 'False'
-Math_1_Unframed:
-  response: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67,
-    71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151,
-    157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229,
-  response_correct: 'False'
-Math_2_Framed:
-  response: 'The sum of the squares of the first ten natural numbers can be calculated
-    using the formula:
+      If Proposition 1 were true, then Proposition 3 would also have to be true, as
+      Proposition 3 states that Proposition 1 is false. However, this would create
+      a contradiction, so Proposition 1 must be false.
 
 
-    Sum = n(n+1)(2n+1)/6
+      If Proposition 1 is false, and Proposition 2 states that Proposition 1 is true,
+      then Proposition 2 must be true. This is consistent with our previous determination.
 
 
-    Where n is the number of natural numbers.
+      Lastly, Proposition 3 states that the answers to Propositions 1 & 2 are the
+      same. Since we have determined that Proposition 1 is false and Proposition 2
+      is true, the answers to Propositions 1 &'
+    response_correct: 'false'
+  Logic_2_Unframed:
+    model: gpt-3.5-turbo
+    response: 'Proposition 1: True
 
+      Proposition 2: True
 
-    For the first ten natural numbers, n = 10. Plugging this into the formula:
+      Proposition 3: False'
+    response_correct: 'false'
+  Logic_3_Framed:
+    model: gpt-3.5-turbo
+    response: 'A book that has 500 pages falls under the classification of a novel
+      and a storybook.
 
 
-    Sum = 10(10+1)(2*10+1)/6
+      1. Novel: A book with at least 400 pages - since a book with 500 pages exceeds
+      the minimum requirement of 400 pages, it can be classified as a novel.
 
-    Sum = 10*11*21/6
 
-    Sum = 385
+      2. Storybook: A book with at most 600 pages - since a book with 500 pages falls
+      within the maximum limit of 600 pages, it can also be classified as a storybook.
 
 
-    Therefore, the sum of the squares of the first ten natural numbers is 385.'
-  response_correct: 'true'
-Math_2_Unframed:
-  response: 'The sum of the squares of the first ten natural numbers can be calculated
-    using the formula:
+      In summary, a book with 500 pages can be classified as both a novel (since it
+      has at least 400 pages) and a storybook (since it has at most 600 pages).'
+    response_correct: 'True'
+  Logic_3_Unframed:
+    model: gpt-3.5-turbo
+    response: We can say that the book with 500 pages is classified as a storybook,
+      as it has at most 600 pages.
+    response_correct: 'False'
+  Math_1_Framed:
+    model: gpt-3.5-turbo
+    response: 'Here is a list of all prime numbers between 1 and 1000:
 
 
-    n(n+1)(2n+1)/6
+      2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71,
+      73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157,
+      163, 167, 173, 179, 181, 191, 193, 197,'
+    response_correct: 'False'
+  Math_1_Unframed:
+    model: gpt-3.5-turbo
+    response: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61,
+      67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149,
+      151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229,
+    response_correct: 'False'
+  Math_2_Framed:
+    model: gpt-3.5-turbo
+    response: 'The sum of the squares of the first ten natural numbers can be found
+      using the formula:
 
 
-    Where n is the number of natural numbers we want to sum the squares of. In this
-    case, n = 10.
+      1² + 2² + 3² + ... + 10² = n(n+1)(2n+1)/6
 
 
-    Plugging in n = 10 into the formula:
+      Substitute n=10 into the formula:
 
 
-    10(10+1)(2*10+1)/6
+      10(10+1)(2*10+1)/6
 
-    = 10(11)(21)/6
+      = 10*11*21/6
 
-    = 10*231/6
+      = 385
 
-    = 10*77
 
-    = 770
+      Therefore, the sum of the squares of the first ten natural numbers is 385.'
+    response_correct: 'True'
+  Math_2_Unframed:
+    model: gpt-3.5-turbo
+    response: 'The sum of the squares of the first ten natural numbers is:
 
 
-    Therefore, the sum of the squares of the first ten natural numbers is 770.'
-  response_correct: 'false'
-Math_3_Framed:
-  response: 'To find the angle at which you should aim your laser gun to hit the target,
-    we can use trigonometry. Let''s define the angle we are looking for as \( \theta
-    \).
+      1^2 + 2^2 + 3^2 + 4^2 + 5^2 + 6^2 + 7^2 + 8^2 + 9^2 + 10^2 = 385'
+    response_correct: 'True'
+  Math_3_Framed:
+    model: gpt-3.5-turbo
+    response: 'The angle at which the laser gun should be shot can be found using
+      trigonometry. Let θ be the angle at which the laser gun should be shot.
 
 
-    From the information given, we can see that we have a right triangle formed by
-    the tower, the distance from the base of the tower to your position, and the line
-    of sight from your position to the top of the tower.
+      In the right triangle formed by the tower, the ground, and the line of sight
+      of the laser gun, we have:
 
 
-    The opposite side of the triangle is the height of the tower, which is 324 meters.
-    The adjacent side of the triangle is the distance from the base of the tower to
-    your position, which is 54 meters.
+      tan(θ) = opposite/adjacent
 
+      tan(θ) = 324/54
 
-    Now, we can use the tangent function to find the angle \( \theta \):
+      tan(θ) = 6
 
 
-    \( \tan(\'
-  response_correct: 'true'
-Math_3_Unframed:
-  response: "To find the angle at which you should shoot your laser gun, you can use\
-    \ trigonometry. \n\nLet the angle you need to shoot at be θ. The opposite side\
-    \ of the triangle formed by the tower and the ground is 324 meters (height of\
-    \ the tower) and the adjacent side is 54 meters (distance from the base of the\
-    \ tower to your position). \n\nUsing the tangent function:\ntan(θ) = opposite/adjacent\n\
-    tan(θ) = 324/54\ntan(θ) = 6 \n\nTaking the inverse tangent of both sides:\nθ =\
-    \ tan^(-1)(6)\nθ ≈ 80.54 degrees \n\nTherefore, you should shoot your laser gun\
-    \ at an angle of approximately"
-  response_correct: 'True'
+      θ = tan^(-1)(6)
+
+      θ ≈ 80.5 degrees
+
+
+      Therefore, the laser gun should be shot at an angle of approximately 80.5 degrees
+      to hit the target at the top of the tower.'
+    response_correct: 'True'
+  Math_3_Unframed:
+    model: gpt-3.5-turbo
+    response: 'To find the angle at which you should shoot your laser gun, you can
+      use basic trigonometry.
+
+
+      Let''s denote the distance from the base of the tower to the target as x. Since
+      the tower is 324 meters tall and you are standing 54 meters away from the base,
+      the total distance from where you are standing to the top of the tower (the
+      hypotenuse of the triangle) is 324 + 54 = 378 meters.
+
+
+      Now, using the tangent function in right-angled triangles (tan(theta) = opposite/adjacent),
+      we can find the angle theta as follows:
+
+
+      tan(theta) = opposite/adjacent
+
+      tan(theta) = 324/54
+
+      tan(theta) = 6
+
+
+      Now, to'
+    response_correct: 'True'
+gpt-3.5-turbo-0125:
+  History_1_Framed:
+    model: gpt-3.5-turbo-0125
+    response: 'The date of D-Day was June 6, 1944. This significant military operation,
+      also known as the Normandy Invasion, marked the beginning of the Allied invasion
+      of Nazi-occupied France during World War II.
+
+
+      Source:
+
+      History.com. “D-Day.” History.com, A&E Television Networks, 2009, www.history.com/topics/world-war-ii/d-day.'
+    response_correct: 'true'
+  History_1_Unframed:
+    model: gpt-3.5-turbo-0125
+    response: D-Day was on June 6, 1944.
+    response_correct: 'True'
+  History_2_Framed:
+    model: gpt-3.5-turbo-0125
+    response: The country that gained independence from the United Kingdom in 1776
+      was the United States of America.
+    response_correct: 'False'
+  History_2_Unframed:
+    model: gpt-3.5-turbo-0125
+    response: The United States of America gained independence from the United Kingdom
+      in 1776.
+    response_correct: 'true'
+  History_3_Framed:
+    model: gpt-3.5-turbo-0125
+    response: 'The commanding general of the Confederate States Army during the American
+      Civil War was General Robert E. Lee.
+
+
+      Source: National Park Service, "Robert E. Lee," https://www.nps.gov/arho/learn/historyculture/robert-e-lee.htm'
+    response_correct: 'True'
+  History_3_Unframed:
+    model: gpt-3.5-turbo-0125
+    response: Robert E. Lee was the commanding general of the Confederate States Army
+      during the American Civil War.
+    response_correct: 'True'
+  Logic_1_Framed:
+    model: gpt-3.5-turbo-0125
+    response: "The ice cream costs $0.05.\n\nTo solve this problem, let's denote the\
+      \ cost of the ice cream as x. Since the cake costs $1 more than the ice cream,\
+      \ the cost of the cake would be x + $1. \n\nGiven that the total cost of cake\
+      \ and ice cream is $1.10, we can write the equation:\nx + (x + $1) = $1.10\n\
+      2x + $1 = $1.10\n2x = $0.10\nx = $0.05\n\nTherefore, the ice cream costs $0.05."
+    response_correct: 'true'
+  Logic_1_Unframed:
+    model: gpt-3.5-turbo-0125
+    response: "Let's assume the cost of the ice cream is x dollars. \n\nSince the\
+      \ cake costs $1 more than the ice cream, the cost of the cake is x + $1. \n\n\
+      Therefore, the total cost of the cake and ice cream is $1 + (x + $1) = $1 +\
+      \ x + $1 = $2 + x. \n\nGiven that the total cost is $1.10, we can write the\
+      \ equation:\n\n$2 + x = $1.10\n\nSubtracting $2 from both sides, we get:\n\n\
+      x = $1.10 - $2\nx = $0.10\n\nTherefore, the ice cream costs $0.10."
+    response_correct: 'False'
+  Logic_2_Framed:
+    model: gpt-3.5-turbo-0125
+    response: 'Proposition 1: False
+
+      Proposition 2: True
+
+      Proposition 3: False
+
+
+      Explanation:
+
+      If Proposition 1 is true, then Proposition 2 would also be true according to
+      Proposition 2''s statement. However, this would create a contradiction as Proposition
+      2 states that Proposition 1 is true, which would lead to a cycle of true statements.
+      Therefore, Proposition 1 must be false.
+
+
+      If Proposition 1 is false, then Proposition 2 is true according to Proposition
+      2''s statement. Since Proposition 1 is false, Proposition 3 states that the
+      answers to Propositions 1 & 2 must be the same, which means Proposition 2 must
+      also be false. This creates a consistent solution where Proposition'
+    response_correct: 'false'
+  Logic_2_Unframed:
+    model: gpt-3.5-turbo-0125
+    response: True, False, False
+    response_correct: 'false'
+  Logic_3_Framed:
+    model: gpt-3.5-turbo-0125
+    response: 'A book with 500 pages falls into the category of a novel and a storybook.
+
+
+      1. Novel: A novel is classified as a book with at least 400 pages. Therefore,
+      a book with 500 pages meets the minimum page requirement for a novel.
+
+
+      2. Storybook: A storybook is classified as a book with at most 600 pages. Since
+      a book with 500 pages falls within the 600-page limit, it can also be classified
+      as a storybook.
+
+
+      In summary, a book with 500 pages can be classified as both a novel and a storybook
+      based on the given classifications.'
+    response_correct: 'False'
+  Logic_3_Unframed:
+    model: gpt-3.5-turbo-0125
+    response: We can say that a book with 500 pages falls under the category of a
+      storybook, as it has at most 600 pages.
+    response_correct: 'False'
+  Math_1_Framed:
+    model: gpt-3.5-turbo-0125
+    response: 'Response:
+
+
+      Here is a list of all the prime numbers between 1 and 1000:
+
+
+      2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71,
+      73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157,
+      163, 167, 173, 179, 181, 191, 193,'
+    response_correct: 'False'
+  Math_1_Unframed:
+    model: gpt-3.5-turbo-0125
+    response: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61,
+      67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149,
+      151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229,
+    response_correct: 'false'
+  Math_2_Framed:
+    model: gpt-3.5-turbo-0125
+    response: "The sum of the squares of the first ten natural numbers can be calculated\
+      \ using the formula: \n\n1^2 + 2^2 + 3^2 + ... + 10^2 = n(n+1)(2n+1)/6, \n\n\
+      where n is the number of natural numbers we are summing up to. In this case,\
+      \ n = 10, so:\n\n1^2 + 2^2 + 3^2 + ... + 10^2 = 10(10+1)(2*10+1)/6\n= 10(11)(21)/6\n\
+      = 10 * 11 * 3.5\n= 385\n\nTherefore, the sum of the squares of the"
+    response_correct: 'true'
+  Math_2_Unframed:
+    model: gpt-3.5-turbo-0125
+    response: 'The sum of the squares of the first ten natural numbers is:
+
+
+      1^2 + 2^2 + 3^2 + 4^2 + 5^2 + 6^2 + 7^2 + 8^2 + 9^2 + 10^2 = 385'
+    response_correct: 'True'
+  Math_3_Framed:
+    model: gpt-3.5-turbo-0125
+    response: "The angle at which you should shoot the laser gun can be calculated\
+      \ using trigonometry. \n\nLet the angle at which you should shoot the laser\
+      \ gun be θ. \nAccording to trigonometry, we have:\ntan(θ) = opposite / adjacent\n\
+      tan(θ) = 324 / 54\ntan(θ) = 6\n\nTaking inverse tangent on both sides to find\
+      \ the value of θ, we get:\nθ = tan^(-1)(6)\nθ ≈ 80.54 degrees\n\nTherefore,\
+      \ you should shoot your laser gun at an angle of approximately 80.54 degrees\
+      \ to hit the target at the top of the tower."
+    response_correct: 'true'
+  Math_3_Unframed:
+    model: gpt-3.5-turbo-0125
+    response: "To find the angle at which you should shoot your laser gun to hit the\
+      \ target, you can use trigonometry. \n\nFirst, we can set up a right triangle\
+      \ with the tower, the distance from the tower to you (54 meters), and the height\
+      \ of the tower (324 meters). The angle we are looking for is the angle opposite\
+      \ the height of the tower.\n\nNext, we can use the tangent function, which is\
+      \ opposite over adjacent, to find the angle. So, tan(θ) = height of tower /\
+      \ distance from tower\n\ntan(θ) = 324 / 54\ntan(θ) = 6\n\nNow, we need to find\
+      \ the angle whose tangent is 6. We can use the inverse tangent function"
+    response_correct: 'True'
+gpt-4:
+  History_1_Framed:
+    model: gpt-4
+    response: 'D-Day took place on June 6, 1944. This was the day of the Normandy
+      landings which began the liberation of northwestern Europe from Nazi control
+      during World War II.
+
+
+      As per my sources, this information is widely accepted across many historical
+      references but specifically, this date can be found referenced in numerous World
+      War II documents and resources including "The Longest Day" by Cornelius Ryan,
+      as well as The National WWII Museum''s online resources.
+
+
+      Sources:
+
+      1. Ryan, Cornelius. The Longest Day. Simon and Schuster, 1959.
+
+      2. The National WWII Museum. "D-Day: The Invasion of Normandy." https://www.nationalww2museum.org/war/topics/d-day'
+    response_correct: 'True'
+  History_1_Unframed:
+    model: gpt-4
+    response: June 6, 1944
+    response_correct: 'True'
+  History_2_Framed:
+    model: gpt-4
+    response: The country that gained independence from the United Kingdom in 1776
+      is the United States of America.
+    response_correct: 'True'
+  History_2_Unframed:
+    model: gpt-4
+    response: The United States of America gained independence from the United Kingdom
+      in 1776.
+    response_correct: 'True'
+  History_3_Framed:
+    model: gpt-4
+    response: "The commanding general of the Confederate States Army during the American\
+      \ Civil War was General Robert E. Lee. Lee took command of the Army of Northern\
+      \ Virginia (one of the main Confederate armies) in 1862 and went on to lead\
+      \ the Confederate forces for most of the war. \n\nSources:\n1) History.com Editors.\
+      \ (2009). Robert E. Lee. HISTORY. https://www.history.com/topics/american-civil-war/robert-e-lee.\n\
+      2) McPherson, J. M. (1988). Battle Cry of Freedom: The Civil War Era. Oxford\
+      \ University Press."
+    response_correct: 'True'
+  History_3_Unframed:
+    model: gpt-4
+    response: The commanding general of the Confederate States Army during the American
+      Civil War was General Robert E. Lee.
+    response_correct: 'True'
+  Logic_1_Framed:
+    model: gpt-4
+    response: 'The cost of the ice cream is $0.05.
+
+
+      Here is the logical reasoning to determine this:
+
+
+      Let''s denote the cost of the ice cream as ''I'' and the cost of the cake as
+      ''C''. Given in the problem, we know that:
+
+
+      C + I = $1.10 (1) (This is because the total cost of the cake and ice cream
+      is $1.10.)
+
+
+      We are also told that the cake costs $1 more than the ice cream. This can be
+      represented as:
+
+
+      C = I + $1 (2) (This is the definition given in the problem.)
+
+
+      Substituting equation (2) into equation (1), we get:
+
+
+      I + $1 + I = $1.10'
+    response_correct: 'True'
+  Logic_1_Unframed:
+    model: gpt-4
+    response: The ice cream costs $0.05.
+    response_correct: 'True'
+  Logic_2_Framed:
+    model: gpt-4
+    response: "For a consistent solution, we need an assignment of True or False to\
+      \ each proposition that makes all propositions true. Let's try to unpack this.\n\
+      \nProposition 1 says \"Proposition 3 is false.\" \n\nProposition 2 says \"Proposition\
+      \ 1 is true.\"\n\nProposition 3 says \"The answers to Propositions 1 & 2 are\
+      \ the same.\"\n\nLet's start with an assumption. We assume that Proposition\
+      \ 1 is true, as we have to make Proposition 2 true and Proposition 2 says that\
+      \ Proposition 1 is true. If Proposition 1 is true, then Proposition 3 (according\
+      \ to Proposition 1) is false.\n\nSince Proposition 3 is false, the answers to\
+      \ Propositions 1 &"
+    response_correct: 'False'
+  Logic_2_Unframed:
+    model: gpt-4
+    response: 'Solution:
+
+      Proposition 1: True,
+
+      Proposition 2: True,
+
+      Proposition 3: False.
+
+
+      Explanation:
+
+      If Proposition 1 is true, then Proposition 3 being false (as stated in Proposition
+      1) is consistent because it is, indeed, false. However, in order for Proposition
+      2 to be true, Proposition 1 has to be true, which it is. Lastly, Proposition
+      3 states that the answers to Propositions 1 & 2 are the same. But, Proposition
+      1 is true and Proposition 2 is true - they are the same. However, we already
+      established that Proposition 3 must be false, so this is a contradiction. Thus,
+      Proposition 3 is false. As such,'
+    response_correct: 'False'
+  Logic_3_Framed:
+    model: gpt-4
+    response: 'Based on the given classification, a book that has 500 pages can be
+      classified as a novel or a storybook. Here''s why:
+
+
+      1. Novel: According to the provided classification, a novel should have at least
+      400 pages. Thus, a book with 500 pages could be a novel since it has more than
+      the minimum page requirement for novels.
+
+
+      2. Short Story: Short stories are classified as having at most 200 pages. Given
+      that our book has 500 pages, it exceeds the maximum limit for a short story.
+      Therefore, it cannot be classified as a short story.
+
+
+      3. Storybook: Storybooks are classified as having at most 600 pages. Since the
+      book in question has 500 pages, it falls within this'
+    response_correct: 'True'
+  Logic_3_Unframed:
+    model: gpt-4
+    response: The book with 500 pages can be classified as a storybook. It exceeds
+      the page limit for a novel and short story but fits into the range for a storybook.
+    response_correct: 'False'
+  Math_1_Framed:
+    model: gpt-4
+    response: 'Listing all the prime numbers between 1 and 1000:
+
+
+      2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71,
+      73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157,
+      163, 167, 173, 179, 181, 191, 193, 197, 199,'
+    response_correct: 'True'
+  Math_1_Unframed:
+    model: gpt-4
+    response: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61,
+      67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149,
+      151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229,
+    response_correct: 'False'
+  Math_2_Framed:
+    model: gpt-4
+    response: "The sum of the squares of the first ten natural numbers is 385.\n\n\
+      Mathematical proof:\n\nThe formula for the sum of squares of the first n natural\
+      \ numbers is given by:\n\n S = n(n + 1)(2n + 1) / 6\n\nIf we plug in n=10 into\
+      \ the formula, we get:\n\n S = 10 * (10 + 1) * (2*10 + 1) / 6 \n = 10 * 11 *\
+      \ 21 / 6 \n = 385 \n\nThe formula can be proved by mathematical induction.\n\
+      \nFor n=1, the formula holds as 1(1 + 1)(2*1 + 1) / 6 = 1."
+    response_correct: 'True'
+  Math_2_Unframed:
+    model: gpt-4
+    response: The sum of the squares of the first ten natural numbers is 385.
+    response_correct: 'True'
+  Math_3_Framed:
+    model: gpt-4
+    response: 'To hit your target at the top of the tower, you should aim your laser
+      gun at an angle of approximately 80.54 degrees from the ground. Here''s how
+      the calculation works:
+
+
+      We can use the tangent function in trigonometry to find this angle. Tangent
+      of an angle in a right triangle is defined as the ratio of the length of the
+      opposite side to the length of the adjacent side.
+
+
+      Let''s represent:
+
+
+      - Height of the tower (opposite side) as ''O'' = 324 meters.
+
+      - Distance from the base of the tower (adjacent side) as ''A'' = 54 meters.
+
+      - The angle from the ground you should aim the gun as ''θ''.
+
+
+      Using the formula tan(θ) ='
+    response_correct: 'True'
+  Math_3_Unframed:
+    model: gpt-4
+    response: 'The situation described in the problem can be solved using the tangent
+      function in trigonometry, where the tangent of an angle in a right triangle
+      is equal to the opposite side (the height of the tower, h = 324 m) over the
+      adjacent side (your distance from the tower base, d = 54 m).
+
+
+      So: tan α = h/d
+
+
+      Rearrange this formula to get the angle α (in degrees), remembering that the
+      arctangent function (also known as the inverse tangent function) will get you
+      from the tangent of the angle back to the angle itself:
+
+
+      α = arctan(h/d)
+
+
+      Substitute the values for h and d:
+
+
+      α = arctan(324/54)
+
+
+      Therefore, the angle at'
+    response_correct: 'True'
+gpt-4-0125-preview:
+  History_1_Framed:
+    model: gpt-4-0125-preview
+    response: D-Day, the day during World War II when the Allies launched a massive
+      assault on the German-occupied Normandy coast of France, took place on June
+      6, 1944. This event is extensively documented in numerous historical sources.
+      One definitive source is the U.S. Army's official history, "Cross-Channel Attack,"
+      by Gordon A. Harrison, part of the U.S. Army in World War II series, specifically
+      the European Theater of Operations. This and other documents available through
+      the U.S. Army Center of Military History (https://history.army.mil/html/books/007/7-4-1/CMH_Pub_7-4-1.pdf)
+      provide detailed accounts of the planning, execution, and outcomes
+    response_correct: 'True'
+  History_1_Unframed:
+    model: gpt-4-0125-preview
+    response: D-Day, the Allied invasion of Normandy in World War II, occurred on
+      June 6, 1944.
+    response_correct: 'false'
+  History_2_Framed:
+    model: gpt-4-0125-preview
+    response: The country that gained independence from the United Kingdom in 1776
+      is the United States of America. The Declaration of Independence, which was
+      adopted on July 4, 1776, marked the formal assertion of the thirteen colonies'
+      break from British rule, leading to the Revolutionary War that ultimately secured
+      American independence.
+    response_correct: 'True'
+  History_2_Unframed:
+    model: gpt-4-0125-preview
+    response: The country that gained independence from the United Kingdom in 1776
+      is the United States of America. The Declaration of Independence, which declared
+      the thirteen American colonies as independent sovereign states no longer under
+      British rule, was adopted by the Continental Congress on July 4, 1776. This
+      day is celebrated annually in the United States as Independence Day.
+    response_correct: 'True'
+  History_3_Framed:
+    model: gpt-4-0125-preview
+    response: 'The commanding general of the Confederate States Army during the American
+      Civil War was General Robert E. Lee. Lee assumed command of the Army of Northern
+      Virginia, the Confederacy''s most prestigious army, in June 1862 and became
+      the de facto leader of the Confederate military forces. While he never officially
+      held the title of "commanding general of the Confederate States Army" until
+      very late in the war (January 1865), his leadership, strategic decisions, and
+      engagements defined much of the Confederate military efforts.
+
+
+      Lee''s tenure included significant battles such as those at Gettysburg, Antietam,
+      and Fredericksburg, where his tactical decisions greatly impacted the course
+      of the war. It''s worth noting that the Confederacy''s structure was somewhat
+      decentralized'
+    response_correct: 'False'
+  History_3_Unframed:
+    model: gpt-4-0125-preview
+    response: The most prominent commanding general of the Confederate States Army
+      during the American Civil War was General Robert E. Lee. Lee took command of
+      the Army of Northern Virginia in 1862 and became the de facto principal military
+      advisor to Confederate President Jefferson Davis, effectively serving as the
+      top general of the Confederate States Army. Though other generals commanded
+      significant armies and departments within the Confederacy, Lee's leadership
+      and strategic decisions became synonymous with the Confederate military effort
+      until his surrender to Union General Ulysses S. Grant at Appomattox Court House
+      on April 9, 1865, effectively ending the Civil War.
+    response_correct: 'True'
+  Logic_1_Framed:
+    model: gpt-4-0125-preview
+    response: 'Certainly! To answer this question, let''s denote the cost of the cake
+      as \( C \) and the cost of the ice cream as \( I \). The problem statement gives
+      us two pieces of information:
+
+
+      1. Together, the cake and ice cream cost $1.10. Hence, we can write:
+
+      \[ C + I = 1.10 \]
+
+
+      2. The cake costs $1 more than the ice cream. Thus, we have:
+
+      \[ C = I + 1.00 \]
+
+
+      Now, we can solve these two equations simultaneously to find the values of \(
+      C \) and \( I \). Substituting the second equation into the first gives us:
+
+      \[ (I + 1.00) + I ='
+    response_correct: False.
+  Logic_1_Unframed:
+    model: gpt-4-0125-preview
+    response: 'Let''s denote the cost of the cake as \(C\) and the cost of the ice
+      cream as \(I\). We''re given two pieces of information:
+
+
+      1. The total cost is $1.10, so we have \(C + I = 1.10\).
+
+      2. The cake costs $1 more than the ice cream, so we have \(C = I + 1\).
+
+
+      We can solve this system of equations to find the cost of the ice cream. Substituting
+      the second equation into the first, we get:
+
+
+      \[I + 1 + I = 1.10\]
+
+
+      Simplifying, we get:
+
+
+      \[2I + 1 = 1.10\]
+
+
+      Subtracting 1'
+    response_correct: False.
+  Logic_2_Framed:
+    model: gpt-4-0125-preview
+    response: 'To solve this, let’s analyze the propositions and their implications:
+
+
+      1. Proposition 1: Proposition 3 is false.
+
+      2. Proposition 2: Proposition 1 is true.
+
+      3. Proposition 3: The answers to Propositions 1 & 2 are the same.
+
+
+      Now, let’s work through these propositions logically:
+
+
+      - **Assuming Proposition 1 is true:** This means Proposition 3 is false. If
+      Proposition 3 is false, then the answers to Propositions 1 & 2 are not the same.
+      Given that Proposition 2 states Proposition 1 is true (and we assumed Proposition
+      1 is true), this supports Proposition 2 being true as well. However, for Proposition
+      3 to be false, Proposition'
+    response_correct: False.
+  Logic_2_Unframed:
+    model: gpt-4-0125-preview
+    response: 'To solve these propositions, let''s analyze them one by one, considering
+      their implications on each other:
+
+
+      ### Proposition 1:
+
+      - It says, "Proposition 3 is false."
+
+
+      ### Proposition 2:
+
+      - It says, "Proposition 1 is true."
+
+
+      ### Proposition 3:
+
+      - It says, "The answers to Propositions 1 & 2 are the same."
+
+
+      Let''s suppose Proposition 1 is true:
+
+      - If Proposition 1 is true (asserting Proposition 3 is false), then Proposition
+      2, which states Proposition 1 is true, supports the initial assumption that
+      Proposition 1 is indeed true. So far, so consistent.
+
+
+      Given Proposition 1 is true:
+
+      - Proposition 3 being false (as Proposition'
+    response_correct: 'False'
+  Logic_3_Framed:
+    model: gpt-4-0125-preview
+    response: 'Given the classifications you''ve provided, let''s analyze the conditions
+      applicable to a book that has 500 pages.
+
+
+      1. **Novel**: A book is classified as a novel if it has at least 400 pages.
+      Given that a book with 500 pages exceeds the 400-page minimum, it fits the criteria
+      to be considered a novel. Therefore, a 500-page book can be classified as a
+      novel.
+
+
+      2. **Short Story**: A short story is defined by having at most 200 pages. Since
+      a book with 500 pages far exceeds this limit, it cannot be classified as a short
+      story. The book''s length places it outside the maximum page count for this
+      category.
+
+
+      3. **Storybook**: The criteria state that a story'
+    response_correct: 'False'
+  Logic_3_Unframed:
+    model: gpt-4-0125-preview
+    response: 'Based on the given classification:
+
+
+      - A novel has at least 400 pages.
+
+      - A short story has at most 200 pages.
+
+      - A storybook has at most 600 pages.
+
+
+      A book that has 500 pages doesn''t fit the classification of a short story,
+      as it exceeds the maximum of 200 pages for a short story. It does meet the criteria
+      for a novel, as it has at least 400 pages, and it also fits within the maximum
+      limit for a storybook, which is 600 pages.
+
+
+      Therefore, based on the provided information, a book with 500 pages could be
+      classified either as a novel or a storybook. However, without additional criteria
+      distinguishing novels from storybooks besides page count, it''s not completely'
+    response_correct: 'False'
+  Math_1_Framed:
+    model: gpt-4-0125-preview
+    response: 'Listing all the prime numbers between 1 and 1000 involves identifying
+      the numbers within this range that have no divisors other than 1 and themselves.
+      Here is a list of all prime numbers between 1 and 1000:
+
+
+      2, 3, 5, 7, 11, 13, 17, 19, 23,
+
+      29, 31, 37, 41, 43, 47, 53, 59, 61, 67,
+
+      71, 73, 79, 83, 89, 97, 101, 103, 107, 109,
+
+      113, 127, 131, 137, 139, 149, 151'
+    response_correct: 'False'
+  Math_1_Unframed:
+    model: gpt-4-0125-preview
+    response: 'Here is the list of all prime numbers between 1 and 1000:
+
+
+      2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71,
+      73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157,
+      163, 167, 173, 179, 181, 191, 193, 197,'
+    response_correct: 'True'
+  Math_2_Framed:
+    model: gpt-4-0125-preview
+    response: 'As a Math Professor, I''d be happy to show how to find the sum of the
+      squares of the first ten natural numbers, which means calculating \(1^2 + 2^2
+      + 3^2 + \dots + 10^2\).
+
+
+      To do this, we use a general formula that gives us the sum of the squares of
+      the first \(n\) natural numbers: \[S_n = \frac{n(n + 1)(2n + 1)}{6}\]
+
+
+      In this case, \(n = 10\), so we substitute \(10\) into the formula:
+
+
+      \[S_{10} = \frac{10(10 + 1)(2 \cdot 10 + 1)}{6'
+    response_correct: 'True'
+  Math_2_Unframed:
+    model: gpt-4-0125-preview
+    response: 'To find the sum of the squares of the first ten natural numbers, we
+      calculate the square of each number from 1 to 10 and then sum them up. The natural
+      numbers starting from 1 are: 1, 2, 3, ..., 10.
+
+
+      The formula to directly calculate the sum of the squares of the first \(n\)
+      natural numbers is given by:
+
+
+      \[
+
+      \text{Sum of squares} = \frac{n(n + 1)(2n + 1)}{6}
+
+      \]
+
+
+      For the first 10 natural numbers, \(n = 10\). Plugging this into the formula
+      gives:
+
+
+      \[
+
+      \text{Sum of squares} = \frac{10(10 + 1)(2'
+    response_correct: 'True'
+  Math_3_Framed:
+    model: gpt-4-0125-preview
+    response: 'To find the angle at which the laser gun should be aimed to hit the
+      target at the top of the tower, you can use trigonometry. Here, you''re basically
+      dealing with a right triangle where:
+
+
+      - The "opposite side" (height of the tower) is 324 meters.
+
+      - The "adjacent side" (distance from the base of the tower) is 54 meters.
+
+
+      You need to find the angle θ (theta) which is the angle of elevation from your
+      position to the top of the tower. In trigonometry, the tangent of an angle in
+      a right triangle is the ratio of the length of the opposite side to the length
+      of the adjacent side. Thus,
+
+
+      \[ \tan(\theta) = \'
+    response_correct: False.
+  Math_3_Unframed:
+    model: gpt-4-0125-preview
+    response: 'To find the angle at which you should aim your laser gun to hit the
+      target, we can use trigonometry, specifically the tangent function, which is
+      defined in a right-angled triangle as the ratio of the opposite side (height
+      of the tower in this case) to the adjacent side (the horizontal distance from
+      you to the base of the tower).
+
+
+      Let''s denote:
+
+      - \( h = 324 \) meters (height of the tower),
+
+      - \( d = 54 \) meters (distance from you to the base of the tower),
+
+      - \( \theta \) (theta) as the angle at which you need to aim your laser gun
+      upward from the ground.
+
+
+      We can determine \(\theta\) using the formula for the tangent of'
+    response_correct: False.

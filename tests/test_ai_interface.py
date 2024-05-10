@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch, MagicMock
-from ai_interface import submit_prompt_to_openai, get_responses, submit_verification_to_openai, process_prompts
+from ai_interface import submit_prompt_to_openai, submit_verification_to_openai, process_prompts
 
 # Import the specific classes needed for exception handling if required
 from openai.error import APIError, AuthenticationError
